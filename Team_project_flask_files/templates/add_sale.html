@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Alcohol Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input {
+            width: calc(100% - 20px);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add a New Alcohol Sale</h1>
+    <form action="{{ url_for('add_sale') }}" method="post">
+        <label for="name">Alcohol Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter alcohol name" required>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="Enter brand name" required>
+
+        <label for="price">Price ($):</label>
+        <input type="number" step="0.01" id="price" name="price" placeholder="Enter price" required>
+
+        <label for="quantity_sold">Quantity Sold:</label>
+        <input type="number" id="quantity_sold" name="quantity_sold" placeholder="Enter quantity sold" required>
+
+        <button type="submit">Add Sale</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

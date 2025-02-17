@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MIS4070 IA04 - Enter a Deposit</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+</head>
+{% block body %}
+
+<form action="/deposit" method="POST">
+	<div class="bank">
+		<div class="app-title">
+			<h1>Deposit</h1>
+		</div>
+
+		</form>
+		<div class="bank-form">
+			<div class="control-group">
+				<label for="number-label">Account Number:</label>
+				<input type="text" class="number-field" value="" placeholder="1000" name="account_num">
+			</div>
+
+			<div class="control-group">
+				<label class="date-label" for="date">Date:</label>
+				<input type="text" class="date-field" value="" placeholder="10/01/2024" name="date">
+			</div>
+
+			<div class="control-group">
+				<label class="description-label" for="description">Deposit Description:</label>
+				<input class="description-field" value="" placeholder="Description" name="description">
+			</div>
+
+			<div class="control-group">
+				<label class="amount-label" for="amount">Amount of Deposit:</label>
+				<input class="amount-field" value="" placeholder="0.00" name="amount">
+			</div>
+
+			<input type="submit" value="Add Deposit" class="btn btn-primary btn-large btn-block" >
+			<br/>
+		</div>
+	</div>
+</form>
+
+{% endblock %}

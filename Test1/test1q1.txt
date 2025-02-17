@@ -1,0 +1,33 @@
+tjh24@Tanners-XPS-13 MINGW64 ~
+$ pwd
+/c/Users/tjh24
+
+tjh24@Tanners-XPS-13 MINGW64 ~
+$ cd MIS4070
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070
+$ ls
+mis4070f24-student-04/
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070
+$ cd mis4070f24-student-04
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04 (main)
+$ git pull
+Already up to date.
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04 (main)
+$ mkdir Test1
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04 (main)
+$ cd Test1
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04/Test1 (main)
+$ echo "print('Your interest earned this year on 500 dollar investment at 4%:', 500 * 0.04)" >> test1q1.py
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04/Test1 (main)
+$ python Test1q1.py
+Your interest earned this year on 500 dollar investment at 4%: 20.0
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/mis4070f24-student-04/Test1 (main)
+$

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Update">
+</form>
+
+<a href="{% url 'song:detail' song.pk %}" class="btn btn-primary">Back to Song</a>
+
+{% endblock %}

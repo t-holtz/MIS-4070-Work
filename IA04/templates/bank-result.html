@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MIS4070 IA04</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+</head>
+{% block body %}
+
+	<div class="bank">
+		<div class="app-title">
+			<h1>Bank</h1>
+		</div>
+
+		<div class="table">
+			<h1>Accounts</h1>
+			<table>
+				<tr>
+					<th>Acct Number</th>
+					<th>Description</th>
+					<th>Balance</th>
+				</tr>
+			{% for d in account_list %}
+			<tr>
+				<td> {{d['account_num']}}</th>
+				<td> {{d['name']}} </td>
+				<td> {{d['balance']}}</td>
+			</tr>
+			{% endfor %}
+			</table>
+		</div>
+
+		<div class="table">
+			<h1>Transactions</h1>
+			<table>
+				<tr>
+					<th>Acct Number</th>
+					<th>Type</th>
+					<th>Date</th>
+					<th>Description</th>
+					<th>Amount</th>
+				</tr>
+			{% for d in transaction_list %}
+			<tr>
+				<td>{{d['account_num']}}</td>
+				<td>{{d['type']}}</td>
+				<td>{{d['date']}}</td>
+				<td>{{d['description']}} </td>
+				<td>{{d['amount']}}</td>
+			</tr>
+			{% endfor %}
+			</table>
+		</div>
+
+		<a href="/check">Enter a Check</a>
+		<a href="/deposit">Enter a Deposit</a>
+
+		</div>
+	</div>
+
+{% endblock %}

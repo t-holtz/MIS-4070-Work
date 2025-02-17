@@ -1,0 +1,24 @@
+tjh24@Tanners-XPS-13 MINGW64 ~
+$ pwd MIS4070
+/c/Users/tjh24
+
+tjh24@Tanners-XPS-13 MINGW64 ~
+$ cd MIS4070
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070
+$ cd MIS4070f24-student-04
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/MIS4070f24-student-04 (main)
+$ cd Test1
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/MIS4070f24-student-04/Test1 (main)
+$ git pull
+Already up to date.
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/MIS4070f24-student-04/Test1 (main)
+$ ls
+test1q1.py  test1q1.txt
+
+tjh24@Tanners-XPS-13 MINGW64 ~/MIS4070/MIS4070f24-student-04/Test1 (main)
+$ git branch
+* main

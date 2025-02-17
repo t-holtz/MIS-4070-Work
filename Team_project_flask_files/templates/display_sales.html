@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol Sales Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alcohol Sales Tracker</h1>
+    <h2>Total Sales: ${{ total_sales }}</h2>
+
+    <h3>Alcohol Sales Details</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Alcohol Name</th>
+                <th>Brand</th>
+                <th>Price ($)</th>
+                <th>Quantity Sold</th>
+                <th>Total ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in alcohol_list %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.brand }}</td>
+                <td>${{ item.price }}</td>
+                <td>{{ item.quantity_sold }}</td>
+                <td>${{ item.price * item.quantity_sold }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

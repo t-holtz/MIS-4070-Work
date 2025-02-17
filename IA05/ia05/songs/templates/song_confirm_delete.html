@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<form method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    {{ form }}
+    <input type="submit" value="Confirm">
+</form>
+
+<a href="{% url 'song:detail' song.pk %}" class="btn btn-primary">Back to Song</a>
+
+{% endblock %}

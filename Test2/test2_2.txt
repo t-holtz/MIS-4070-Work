@@ -1,0 +1,9 @@
+Laptop,1200.00
+Mouse,25.50
+Keyboard,75.00
+Laptop,1250.00
+Monitor, 300.00
+Mouse,24.00
+Printer,150.00
+Keyboard,80.00
+Monitor,290.00
